@@ -210,7 +210,6 @@ nav.solid {
   box-shadow:0 40px 100px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.05);
   position:relative;
 }
-.photo-frame picture { display:block; width:100%; height:100%; }
 .photo-frame img { width:100%; height:100%; object-fit:cover; object-position:top center; }
 .photo-frame::after {
   content:''; position:absolute; inset:0;
@@ -628,11 +627,7 @@ footer a:hover { color:var(--cyan); }
       <!-- Right — Photo -->
       <div class="hero-visual anim">
         <div class="photo-frame">
-          <picture>
-            <source srcset="images/hjhe.avif" type="image/avif">
-            <source srcset="images/hjhe.webp" type="image/webp">
-            <img src="images/hjhe.jpg" alt="Hector Herrera Espinola">
-          </picture>
+          <img src="images/hjhe.jpg" alt="Hector Herrera Espinola">
         </div>
         <div class="fc fc1"><span class="fc-icon">📊</span>Power BI &amp; Sigma</div>
         <div class="fc fc2"><span class="fc-icon">🐍</span>Python &amp; SQL</div>
