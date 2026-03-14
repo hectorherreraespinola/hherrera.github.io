@@ -1,315 +1,1094 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Hector Javier Herrera Espinola</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hector Herrera · Sr. BI &amp; Analytics Analyst</title>
+  <meta name="description" content="Data &amp; Analytics Engineer — Power BI, Sigma, SQL, Python. Ireland." />
+  <meta name="theme-color" content="#06080f" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cal+Sans&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <!-- fallback for Cal Sans -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700;800;900&display=swap');
+  </style>
 
-		<!-- Header -->
-			<div id="header">
+  <style>
+/* ═══════════════════════════════════════════════════
+   TOKENS
+═══════════════════════════════════════════════════ */
+:root {
+  --bg:        #06080f;
+  --bg1:       #0b0f1c;
+  --bg2:       #0f1525;
+  --surface:   rgba(255,255,255,0.04);
+  --border:    rgba(255,255,255,0.07);
+  --border2:   rgba(255,255,255,0.12);
 
-				<div class="top">
+  --blue:      #3b82f6;
+  --cyan:      #22d3ee;
+  --purple:    #a78bfa;
+  --green:     #34d399;
+  --amber:     #fbbf24;
+  --pink:      #f472b6;
 
-					<!-- Logo -->
-						<div id="logo">
-							<style>
-								.image.avatar48 {
-									background-color:black; /* replace with your desired color */
-								}
-							</style>
-							<span class="image avatar48"><img src="images\97549673.png"/></span>
-							<h1 id="title">Hector Javier<br /> 
-								Herrera Espinola</h1>
-							<p>Data Scientist</p>
-						</div>
+  --grad-main:    linear-gradient(135deg, #3b82f6 0%, #22d3ee 100%);
+  --grad-purple:  linear-gradient(135deg, #a78bfa 0%, #3b82f6 100%);
+  --grad-warm:    linear-gradient(135deg, #fbbf24 0%, #f472b6 100%);
+  --grad-text:    linear-gradient(120deg, #e2e8f0 20%, #94a3b8 80%);
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+  --t1: #f1f5f9;
+  --t2: #94a3b8;
+  --t3: #475569;
 
-				</div>
+  --r: 16px;
+  --r-sm: 10px;
+  --ease: cubic-bezier(.4,0,.2,1);
+}
 
-				<div class="bottom">
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; font-size:16px; }
 
-					<!-- Social Icons -->
-					<ul class="icons">
-						
-							<li><a href="https://twitter.com/hekutahabieru" class="icon brands fa-twitter" style="font-size: 30px;"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/hectorherreraespinola" class="icon brands fa-github" style="font-size: 30px;"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/herrerraespinolahj/" class="icon brands fa-linkedin" style="font-size: 30px;"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:herrerae.hj@icloud.com" class="icon solid fa-envelope" style="font-size: 30px;"><span class="label">Email</span></a></li>
-						  
-					</ul>
-					
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--t1);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
 
-				</div>
+/* ── Noise texture overlay ── */
+body::before {
+  content:'';
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+  opacity: 0.4;
+}
 
-			</div>
+.container { max-width:1160px; margin:0 auto; padding:0 28px; position:relative; z-index:1; }
+section { padding:100px 0; position:relative; z-index:1; }
+a { color:inherit; text-decoration:none; }
+img { max-width:100%; display:block; }
 
-		<!-- Main -->
-			<div id="main">
-				<style>
-					#top h2 {
-					  color: white;
-					}
-				  </style>
-				<!-- Intro -->
-				<section id="top" class="image fit" style="background-image: url('images/istockphoto-1206796363-612x612.jpg'); background-size: cover; background-position: center; height: 80vh; display: flex; align-items: center; justify-content: center;">
-					<div class="container">
-						<header style="color: white;">
-						<h2 class="alt">Hi! Welcome to my site. <br />
-							I'm <strong style = "font-weight: bold; color:aqua">Hector</strong>, a Data Scientist skilled in Data Engineering,<br />
-						Data Analytics and Machine Learning.</h2>
-						<p>On this website, I'll be sharing my personal projects related to Data Science, Python programming.<br />
-						I hope you enjoy your visit and please don't hesitate to contact me if you have any questions or feedback!
-					  <footer>
-						<a href="#portfolio" class="button scrolly">Go to my projects <i class="fas fa-arrow-down"></i>
-						</a>
-					  </footer>
-					</div>
-				  </section>
+/* ═══════════════════════════════════════════════════
+   NAV
+═══════════════════════════════════════════════════ */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:200;
+  padding:0 28px;
+  transition: background .3s var(--ease), border-color .3s var(--ease);
+}
+nav.solid {
+  background: rgba(6,8,15,0.88);
+  backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  max-width:1160px; margin:0 auto;
+  display:flex; align-items:center; justify-content:space-between;
+  height:64px;
+}
+.logo {
+  font-family:'Syne','DM Sans',sans-serif;
+  font-weight:800; font-size:1.05rem; letter-spacing:-.02em;
+}
+.logo em { font-style:normal; background:var(--grad-main); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.nav-links { display:flex; align-items:center; gap:4px; list-style:none; }
+.nav-links a {
+  padding:7px 14px; border-radius:8px; font-size:.85rem; font-weight:500;
+  color:var(--t2); transition:color .2s, background .2s;
+}
+.nav-links a:hover { color:var(--t1); background:var(--surface); }
+.nav-pill {
+  padding:8px 18px; border-radius:8px; font-size:.85rem; font-weight:600;
+  background:var(--grad-main); color:#06080f !important; transition:opacity .2s, transform .2s;
+}
+.nav-pill:hover { opacity:.9; transform:translateY(-1px); background:var(--grad-main) !important; }
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+/* Hamburger */
+.burger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:6px; }
+.burger span { display:block; width:22px; height:2px; background:var(--t2); border-radius:2px; transition:.25s var(--ease); }
+.burger.open span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+.burger.open span:nth-child(2){ opacity:0; }
+.burger.open span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+.mob-nav {
+  display:none; position:fixed; inset:0; z-index:190;
+  background:rgba(6,8,15,.97); backdrop-filter:blur(24px);
+  flex-direction:column; align-items:center; justify-content:center; gap:28px;
+}
+.mob-nav.open { display:flex; }
+.mob-nav a { font-size:1.6rem; font-weight:700; color:var(--t1); transition:color .2s; }
+.mob-nav a:hover { color:var(--cyan); }
 
-							<header>
-								<h2><strong style = "font-weight: bold;">PORTFOLIO</strong></h2>
-							</header>
+/* ═══════════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════════ */
+#hero {
+  min-height:100vh; display:flex; align-items:center;
+  padding-top:64px; overflow:hidden;
+}
+/* Animated mesh */
+.mesh {
+  position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none;
+}
+.mesh-orb {
+  position:absolute; border-radius:50%;
+  filter:blur(120px); opacity:0;
+  animation:orbIn 1.2s var(--ease) forwards;
+}
+.orb1 { width:700px; height:700px; background:radial-gradient(circle, #3b82f640, transparent 70%); top:-220px; right:-180px; animation-delay:.1s; }
+.orb2 { width:500px; height:500px; background:radial-gradient(circle, #a78bfa30, transparent 70%); bottom:-100px; left:-120px; animation-delay:.3s; }
+.orb3 { width:300px; height:300px; background:radial-gradient(circle, #22d3ee25, transparent 70%); top:40%; left:35%; animation-delay:.5s; }
+@keyframes orbIn { to { opacity:1; } }
 
-							<p>This is my projects section, where I work to develop technical skills in the field of data science.</p>
-							<article>
-								<header>
-									<!--<span class="date">April 24, 2017</span> -->
-									<h3><a href="#">Azure Data Engineer Project <br />
-									</a></h3>
-								</header>
-								<a href="#" class="image fit"><img src="images\Diagram.png" alt="" /></a>
-								<p>This project involves the extraction, transformation, and analysis of data from the 2021 Tokyo Olympics. The data is sourced from a GitHub repository, ingested using Azure Data Factory, stored in Azure Data Lake Gen2, transformed in Azure Databricks, and analyzed in Azure Synapse Analytics. 
-									The project leverages various Azure services for orchestration, storage, authentication, and secrets management.
-										
-								</p>
-								<ul class="actions special">
-									<a href="https://github.com/hectorherreraespinola/tokyo-olympic-azure-data-engineering-project" class="button">View Project</a>
-									
-								</ul>
-							</article>
+.hero-inner {
+  display:grid; grid-template-columns:1fr 440px; gap:60px;
+  align-items:center; position:relative; z-index:1;
+}
 
-							<article>
-								<header>
-									<!--<span class="date">April 24, 2017</span> -->
-									<h3><a href="#">Streaming Platforms<br />
-									</a></h3>
-								</header>
-								<a href="#" class="image fit"><img src="images/imagen.jpg" alt="" /></a>
-								<p>The project consists of a data ingestion of streaming platforms information, to apply transformations in the datasets that allow queries through  FastAPI (in a dockerized virtual environment).
-								I also created a deployment on AWS to run the Fast API (video on YouTube available).
-										
-								</p>
-								<ul class="actions special">
-									<a href="https://github.com/hectorherreraespinola/Data_Engineering_API" class="button">View Project</a>
-									<a href ="https://www.youtube.com/watch?v=eziXYxe-t5g" class="button">Video on YouTube </a>
-								</ul>
-							</article>
-							<article>
-								<header>
-									<!--<span class="date">April 24, 2017</span> -->
-									<h3><a href="#">Lionel Messi Statistics<br />
-									</a></h3>
-								</header>
-								<a href="#" class="image fit"><img src="images\Workflow.jpg" alt="" /></a>
-								<p>The purpose of this project is to conduct an analysis of Lionel Messi's entire career as a
-									professional footballer, using web scraping to obtain data and Python for data cleaning. 
-									Additionally, a database was created on AWS, and as a result of the project, an application 
-									was generated on Streamlit for visualizations using mainly Matplotlib and Seaborn.
-										
-								</p>
-								<ul class="actions special">
-									<a href="https://github.com/hectorherreraespinola/Messi_10" class="button">View Project</a>
-									<a href ="https://messi10-stats.streamlit.app/" class="button">Link to Streamlit </a>
-								</ul>
-							</article>
+/* Left */
+.hero-eyebrow {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:5px 14px; border-radius:100px;
+  background:rgba(34,211,238,.08); border:1px solid rgba(34,211,238,.2);
+  font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em;
+  color:var(--cyan); margin-bottom:24px;
+}
+.pulse { width:7px; height:7px; border-radius:50%; background:var(--cyan); animation:pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{box-shadow:0 0 0 0 rgba(34,211,238,.5)} 50%{box-shadow:0 0 0 6px rgba(34,211,238,0)} }
 
-							<article>
-								<header>
-									<!--<span class="date">April 22, 2017</span>-->
-									<h3><a href="#">Internet Analysis <br /></a></h3>
-								</header>
-								<a href="#" class="image fit"><img src="images\telco.jpg" alt="" /></a>
-								<p>Data analysis of the internet access penetration for Argentina. I used python por ETL/EDA and Power BI for visualization.</p>
-								<ul class="actions special">
-									<a href="https://github.com/hectorherreraespinola/Data-Analysis" class="button">View Project</a>
-									<a href="https://github.com/hectorherreraespinola/Data-Analysis/blob/main/Dashboard/Internet%20Access%20Argentina.pdf" class="button">Dashboard Power BI</a>
-								</ul>
-							</article>
-							<article>
-								<header>
-									<!--<span class="date">April 18, 2017</span>-->
-									<h3><a href="#">Machine Learning on Hospitalization Datasets</a></h3>
-								</header>
-								<a href="#" class="image fit"><img src="images\camilla-vacía-de-la-cama-en-pasillo-del-hospital-90855015.jpg" alt="" /></a>
-								<p>"The project consists of loading a dataset on hospitalizations. By exploring and training a machine learning model, we need to predict whether patients will spend more than 8 days in the hospital. We will train the model using the part of the dataset that contains the results, and use that as a reference for the other part that does not</p>
-								<ul class="actions special">
-									<a href="https://github.com/hectorherreraespinola/Machine-Learning_Hospitalizations" class="button">View Project</a>
-								</ul>
-							</article>
-							<article>
-								<header>
-									<!--<span class="date">April 14, 2017</span>-->
-									<h3><a href="#">Covid19 Analysis</a></h3>
-								</header>
-								<a href="#" class="image fit"><img src="images/covid19.jpg" alt="" /></a>
-								<p>Project for an analisys of Covid19 using SQL for data exploration and Tableau for visualizations.</p>
-								<ul class="actions special">
-									<a href="https://public.tableau.com/app/profile/hector.herrera.espinola8204/viz/CovidDasboard_16776903984070/Dashboard1?publish=yes" class="button">View Dashboard</a>
-									<a href="https://github.com/hectorherreraespinola/Covid19_SQL_Data_Explorationd_and_Visualization" class="button">View Project</a>
-								</ul>
-								</article>
-								<article>
-									<header>
-										<!--<span class="date">April 14, 2017</span>-->
-										<h3><a href="#">UFO Sightings</a></h3>
-									</header>
-									<a href="#" class="image fit"><img src="https://camo.githubusercontent.com/4cea453d11c37745f7e0b3ea3771d09ffc74315e340194b3fc4cf919e9dc1314/68747470733a2f2f7777772e6d696c7761756b65656d61672e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032312f30312f4765747479496d616765732d313232333635383532322d31303234783632382e6a7067" alt="" /></a>
-									<p> Data Analytics for UFO sightings using Python</p>
-									<ul class="actions special">
-								
-										<a href="https://github.com/hectorherreraespinola/UFO_sightings/blob/main/ufo_sightings.ipynb" class="button no-side-icon">View Project</a>
-									</ul>
-									
+.hero-h1 {
+  font-family:'Syne','DM Sans',sans-serif;
+  font-size:clamp(3rem,6vw,5rem); font-weight:800;
+  line-height:1.04; letter-spacing:-.04em;
+  margin-bottom:18px;
+}
+.hero-h1 .grad {
+  background:var(--grad-main);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.hero-sub {
+  font-size:clamp(1rem,1.8vw,1.2rem); color:var(--t2);
+  font-weight:400; line-height:1.7; max-width:480px; margin-bottom:36px;
+}
+.hero-sub strong { color:var(--t1); font-weight:600; }
 
-					<!-- About me -->
-					
-					<section id="about" class="three">
-						<div class="container"></div>
-							<header>
-								<h2><strong style = "font-weight: bold;">ABOUT ME</strong></h2>
-							</header>
+.hero-btns { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:44px; }
+.btn-main {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:13px 26px; border-radius:var(--r-sm);
+  background:var(--grad-main); color:#06080f;
+  font-size:.9rem; font-weight:700; transition:transform .2s, box-shadow .2s;
+}
+.btn-main:hover { transform:translateY(-2px); box-shadow:0 12px 32px rgba(59,130,246,.35); }
+.btn-ghost {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:13px 26px; border-radius:var(--r-sm);
+  border:1px solid var(--border2); color:var(--t1);
+  font-size:.9rem; font-weight:600; transition:all .2s;
+}
+.btn-ghost:hover { border-color:rgba(34,211,238,.4); background:rgba(34,211,238,.06); color:var(--cyan); transform:translateY(-2px); }
 
-							<a href="#" class="image featured"><img src="images\hjhe.jpg" alt="" /></a>
+/* Mini stat pills */
+.hero-stats { display:flex; gap:10px; flex-wrap:wrap; }
+.hstat {
+  display:flex; align-items:center; gap:8px;
+  padding:9px 16px; border-radius:var(--r-sm);
+  background:var(--surface); border:1px solid var(--border);
+  font-size:.82rem; font-weight:600;
+  backdrop-filter:blur(10px);
+}
+.hstat-num { background:var(--grad-main); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; font-weight:800; font-size:1rem; }
 
-							<p>My name is Hector and I'm  passionate about technology, data science, and artificial intelligence. I'm constantly developing my skills in the AI field and I strive to learn something new every day. I consider myself a problem solver with excellent teamwork skills. I'm originally from Argentina and I currently reside in Ireland.
+/* Right — photo */
+.hero-visual { position:relative; display:flex; justify-content:center; }
+.photo-frame {
+  width:340px; height:420px; border-radius:24px; overflow:hidden;
+  border:1px solid var(--border2);
+  box-shadow:0 40px 100px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.05);
+  position:relative;
+}
+.photo-frame img { width:100%; height:100%; object-fit:cover; object-position:top center; }
+.photo-frame::after {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(to bottom, transparent 55%, rgba(6,8,15,.7));
+}
+/* Floating cards */
+.fc {
+  position:absolute; border-radius:12px;
+  background:rgba(11,15,28,.88); border:1px solid var(--border2);
+  backdrop-filter:blur(16px);
+  padding:10px 16px; font-size:.78rem; font-weight:700;
+  box-shadow:0 16px 40px rgba(0,0,0,.5);
+  display:flex; align-items:center; gap:8px;
+  white-space:nowrap;
+}
+.fc-icon { font-size:1rem; }
+.fc1 { top:28px; right:-42px; color:var(--cyan); border-color:rgba(34,211,238,.25); }
+.fc2 { bottom:90px; left:-48px; color:var(--purple); border-color:rgba(167,139,250,.25); }
+.fc3 { bottom:24px; right:-36px; color:var(--green); border-color:rgba(52,211,153,.25); }
 
-							In my free time I enjoy playing sports, cooking, travelling and learning new skills. I'm currently learning to play the piano and how to program video games using Unity.</p>
-							
-							<h3>Profesional Profile</h3>
-							You can download my CV here: <a href="CV\Hector Herrera Espinola.pdf" class="button">CV</a>
-							<div style="text-align:left;">
-							<p></p>I am an <strong style = "font-weight: bold;">Industrial Engineering</strong>, with a higher diploma as <strong style = "font-weight: bold;">Data Scientist</strong>, and over 14 years of experience in procurement, engineering, management, and analytics across various industries. 
-							My project work and collaboration with diverse global teams have honed my communication, negotiation, teamwork, people management, and problem-solving skills.<br />
-							In data analysis, I am proficient in programming languages such as Python, R, and SQL. I have performed ETL processes and created data visualizations using tools like Power BI, Tableau, and Alteryx. Additionally, I possess hands-on experience with cloud services, mostly Microsoft Azure, specifically, I have knowledge of Azure fundamentals, encompassing capabilities like virtual machines, databases, and schema-less data storage such as Cosmos DB.<br />
-												
-							I am native in <em>Spanish</em> and fluent in <em>English</em> languages, and I am continuously improving my communication skills. I have an intermediate level of <em>Portuguese</em> and I am currently learning the basics of <em>Japanese</em>.<br />
-									
-							I am also interested in video game development and am currently expanding my expertise in this field. Recently, I completed a certification in video game development through Manhattan College (USA) and an Argentine company.<br />
-							
+/* ═══════════════════════════════════════════════════
+   MARQUEE
+═══════════════════════════════════════════════════ */
+.marquee-section {
+  padding:20px 0; border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+  overflow:hidden; position:relative; z-index:1;
+  background:linear-gradient(90deg, var(--bg) 0%, var(--bg1) 50%, var(--bg) 100%);
+}
+.marquee-track {
+  display:flex; gap:40px; width:max-content;
+  animation:marquee 30s linear infinite;
+}
+@keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+.marquee-item {
+  display:flex; align-items:center; gap:10px;
+  font-size:.82rem; font-weight:600; color:var(--t3);
+  text-transform:uppercase; letter-spacing:.06em; white-space:nowrap;
+}
+.marquee-item i { color:var(--t3); font-size:.9rem; }
+.marquee-dot { width:4px; height:4px; border-radius:50%; background:var(--t3); }
 
+/* ═══════════════════════════════════════════════════
+   BENTO GRID — ABOUT
+═══════════════════════════════════════════════════ */
+#about { background:var(--bg); }
+.bento {
+  display:grid;
+  grid-template-columns:repeat(12, 1fr);
+  grid-template-rows:auto;
+  gap:16px;
+}
 
+/* ── Shared card style ── */
+.card {
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:28px;
+  transition:border-color .25s var(--ease), transform .25s var(--ease), box-shadow .25s var(--ease);
+  position:relative; overflow:hidden;
+}
+.card:hover {
+  border-color:var(--border2);
+  transform:translateY(-3px);
+  box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
 
+/* Bento layout */
+.b-main   { grid-column:span 5; grid-row:span 2; }
+.b-langs  { grid-column:span 4; grid-row:span 1; }
+.b-certs  { grid-column:span 3; grid-row:span 1; }
+.b-tools  { grid-column:span 4; grid-row:span 1; }
+.b-loc    { grid-column:span 3; grid-row:span 1; }
 
+/* Main bio card gradient top border */
+.b-main::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+  background:var(--grad-main);
+}
+.b-main h2 {
+  font-family:'Syne','DM Sans',sans-serif;
+  font-size:1.45rem; font-weight:800; letter-spacing:-.03em; margin-bottom:14px;
+}
+.b-main p { font-size:.9rem; color:var(--t2); line-height:1.8; margin-bottom:12px; }
+.b-main p:last-of-type { margin-bottom:20px; }
+.about-tags { display:flex; flex-wrap:wrap; gap:8px; }
+.atag {
+  padding:5px 12px; border-radius:100px; font-size:.75rem; font-weight:600;
+  border:1px solid var(--border); color:var(--t2);
+}
 
+/* Languages */
+.b-langs h3, .b-certs h3, .b-tools h3, .b-loc h3 {
+  font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em;
+  color:var(--t3); margin-bottom:16px;
+}
+.lang-row { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+.lang-row:last-child { margin-bottom:0; }
+.lang-name { font-size:.84rem; font-weight:600; min-width:78px; }
+.lang-dots { display:flex; gap:4px; }
+.ld { width:7px; height:7px; border-radius:50%; background:var(--border2); }
+.ld.on { background:var(--grad-main); background:var(--cyan); }
+.lang-lv { font-size:.72rem; color:var(--t3); margin-left:auto; }
 
-							<p></p>
-						</div>
+/* Certs */
+.cert-item {
+  display:flex; align-items:center; gap:10px;
+  padding:8px 0; border-bottom:1px solid var(--border);
+  font-size:.82rem; color:var(--t2); transition:color .2s;
+}
+.cert-item:last-child { border-bottom:none; padding-bottom:0; }
+.cert-item:hover { color:var(--cyan); }
+.cert-item i { color:var(--cyan); font-size:.85rem; flex-shrink:0; }
 
-							
-							<h3>Technical Skills</h3>
-							<div style="text-align:left;">
-							Programming Languages: Python, SQL,R, Visual Basic, C#<br />
-							Data Visualization Tools: Power BI (DAX, power queries), Tableau (VizQL), MS Excel (Pivot Tables, Macros), Alteryx<br />
-							Data Analysis Tools / Libraries: Pandas, Numpy, Matplotlib, Seaborn, Scikit Learn, Spicy.<br />
-							Machine Learning: Supervised and Unsupervised Learning, Keras & TensorFlow<br />
-							Cloud: Azure(Compute,Networking,Storage)/<br />
-							ERP System: SAP, Oracle<br />
-							Project Management: Jira, Scrum Methodologies<br />
-							</div>
+/* Tools */
+.tools-grid { display:flex; flex-wrap:wrap; gap:8px; }
+.tool-badge {
+  padding:5px 12px; border-radius:var(--r-sm);
+  font-size:.76rem; font-weight:700; letter-spacing:.02em;
+  border:1px solid var(--border);
+}
+.tb-blue   { color:var(--blue);   background:rgba(59,130,246,.08);   border-color:rgba(59,130,246,.2); }
+.tb-cyan   { color:var(--cyan);   background:rgba(34,211,238,.08);   border-color:rgba(34,211,238,.2); }
+.tb-purple { color:var(--purple); background:rgba(167,139,250,.08);  border-color:rgba(167,139,250,.2); }
+.tb-green  { color:var(--green);  background:rgba(52,211,153,.08);   border-color:rgba(52,211,153,.2); }
+.tb-amber  { color:var(--amber);  background:rgba(251,191,36,.08);   border-color:rgba(251,191,36,.2); }
+.tb-pink   { color:var(--pink);   background:rgba(244,114,182,.08);  border-color:rgba(244,114,182,.2); }
 
-							<h3>Certifications</h3>
-							<div style="text-align:left;">
-							<ul style="list-style-type: none;">
-							<li><a href="CV\DataScientistCertificatiom.pdf">Data Scientist</a></li>
-							<li><a href="CV\Certificado-Game-Developer-EducaciónIT.png">Unity Game Developer</a></li>
-							<li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/5GYRD7XL6BGD">Python Specialization</a></li>
-							<li><a href="https://www.coursera.org/account/accomplishments/certificate/78Z4Y2BJ5EW7">Supervised Machine Learning: Regression and Classification</a></li>
-							<li><a href="https://www.coursera.org/account/accomplishments/certificate/37ZY5G5B2QMJ">Linear Algebra for Machine Learning and Data Science</a></li>
-							<li><a href="https://www.coursera.org/account/accomplishments/certificate/S69ZL46WFXSP">Calculus for Machine Learning and Data Science</a></li>
-							<li><a href="https://www.credential.net/c886f74a-0c07-44e5-88a7-04435ed25685#gs.whwngx">Tableau</a></li>
-							<li><a href="https://certificates.frogamesformacion.com/79d2c02d-1008-4f76-9011-936710fffa3a#gs.x4b7wu">SQL</a></li>
-							<li><a href="CV\netogiationskills.pdf">Negotiation Skills</a></li>
-							<li><a href="CV\netogiationskills.pdf">Readiness for Client Experience</a></li>
-							  </ul>
-							</div>
+/* Location card */
+.b-loc {
+  display:flex; flex-direction:column;
+  background:linear-gradient(135deg, rgba(59,130,246,.08), rgba(34,211,238,.04));
+  border-color:rgba(34,211,238,.15);
+}
+.loc-flag { font-size:2.8rem; margin-bottom:8px; }
+.loc-name { font-size:1.1rem; font-weight:700; margin-bottom:4px; }
+.loc-country { font-size:.84rem; color:var(--t2); }
+.loc-avail {
+  margin-top:auto; padding-top:16px;
+  display:flex; align-items:center; gap:7px;
+  font-size:.78rem; font-weight:700; color:var(--green);
+}
+.loc-avail .dot { width:7px; height:7px; border-radius:50%; background:var(--green); animation:pulse 2s infinite; }
 
-									
-								
-						
-					</section>
+/* ═══════════════════════════════════════════════════
+   EXPERIENCE
+═══════════════════════════════════════════════════ */
+#experience { background:var(--bg1); }
+.exp-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.exp-card {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:var(--r); padding:28px;
+  transition:all .25s var(--ease); position:relative; overflow:hidden;
+}
+.exp-card:hover { border-color:var(--border2); transform:translateY(-3px); box-shadow:0 20px 50px rgba(0,0,0,.3); }
+.exp-card.featured {
+  grid-column:span 2;
+  background:linear-gradient(135deg, rgba(59,130,246,.07) 0%, rgba(34,211,238,.04) 100%);
+  border-color:rgba(59,130,246,.2);
+}
+.exp-card.featured::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+  background:var(--grad-main);
+}
+.exp-header { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; margin-bottom:16px; }
+.exp-co { font-size:.76rem; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:var(--cyan); margin-bottom:4px; }
+.exp-role { font-family:'Syne','DM Sans',sans-serif; font-size:1.05rem; font-weight:700; line-height:1.3; }
+.exp-date {
+  font-size:.74rem; font-weight:700; white-space:nowrap;
+  padding:4px 12px; border-radius:100px;
+  background:rgba(255,255,255,.05); border:1px solid var(--border); color:var(--t3);
+}
+.exp-list { list-style:none; display:flex; flex-direction:column; gap:8px; }
+.exp-list li {
+  font-size:.86rem; color:var(--t2); line-height:1.65;
+  padding-left:18px; position:relative;
+}
+.exp-list li::before { content:'▸'; position:absolute; left:0; color:var(--blue); font-size:.8rem; top:1px; }
+.exp-badge {
+  display:inline-flex; align-items:center; gap:6px; margin-top:16px;
+  padding:6px 14px; border-radius:8px;
+  background:rgba(52,211,153,.08); border:1px solid rgba(52,211,153,.2);
+  font-size:.78rem; font-weight:700; color:var(--green);
+}
+.exp-tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:14px; }
+.etag { font-size:.72rem; font-weight:600; padding:4px 10px; border-radius:100px; border:1px solid var(--border); color:var(--t3); }
 
-					
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+/* ═══════════════════════════════════════════════════
+   PROJECTS
+═══════════════════════════════════════════════════ */
+#projects { background:var(--bg); }
+.proj-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.proj-card {
+  border-radius:var(--r); overflow:hidden;
+  border:1px solid var(--border); background:var(--surface);
+  display:flex; flex-direction:column;
+  transition:all .3s var(--ease);
+}
+.proj-card:hover { border-color:var(--border2); transform:translateY(-5px); box-shadow:0 28px 56px rgba(0,0,0,.4); }
+.proj-img { height:190px; overflow:hidden; position:relative; background:var(--bg1); }
+.proj-img img { width:100%; height:100%; object-fit:cover; transition:transform .6s var(--ease); }
+.proj-card:hover .proj-img img { transform:scale(1.07); }
+.proj-img-over { position:absolute; inset:0; background:linear-gradient(to bottom, transparent 40%, rgba(6,8,15,.85)); }
+.proj-type-badge {
+  position:absolute; top:12px; left:12px;
+  font-size:.68rem; font-weight:800; text-transform:uppercase; letter-spacing:.07em;
+  padding:4px 10px; border-radius:100px;
+}
+.ptb-bi     { background:rgba(34,211,238,.12); color:var(--cyan);   border:1px solid rgba(34,211,238,.25); }
+.ptb-ml     { background:rgba(167,139,250,.12); color:var(--purple); border:1px solid rgba(167,139,250,.25); }
+.ptb-de     { background:rgba(52,211,153,.12);  color:var(--green);  border:1px solid rgba(52,211,153,.25); }
+.ptb-da     { background:rgba(251,191,36,.12);  color:var(--amber);  border:1px solid rgba(251,191,36,.25); }
 
-							<header>
-								<h2><strong style = "font-weight: bold;">CONTACT ME</strong></h2>
-							</header>
+.proj-body { padding:22px; flex:1; display:flex; flex-direction:column; }
+.proj-body h3 { font-family:'Syne','DM Sans',sans-serif; font-size:.98rem; font-weight:800; margin-bottom:8px; line-height:1.3; }
+.proj-body p { font-size:.83rem; color:var(--t2); line-height:1.7; flex:1; margin-bottom:14px; }
+.proj-stack { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:16px; }
+.proj-stack span { font-size:.7rem; font-weight:700; padding:3px 9px; border-radius:100px; border:1px solid var(--border); color:var(--t3); }
+.proj-links { display:flex; gap:8px; }
+.plink {
+  flex:1; padding:9px 12px; border-radius:var(--r-sm);
+  font-size:.78rem; font-weight:700; text-align:center;
+  border:1px solid var(--border); color:var(--t2);
+  display:flex; align-items:center; justify-content:center; gap:6px;
+  transition:all .2s;
+}
+.plink:hover { border-color:var(--cyan); color:var(--cyan); background:rgba(34,211,238,.07); }
+.plink.plink-main { background:rgba(34,211,238,.1); border-color:rgba(34,211,238,.25); color:var(--cyan); }
+.plink.plink-main:hover { background:var(--cyan); color:#06080f; border-color:var(--cyan); }
 
-							<p>If you want to contact me, please send me a message through this form or through any of my social networks </p>
-							
+/* ═══════════════════════════════════════════════════
+   CONTACT
+═══════════════════════════════════════════════════ */
+#contact { background:var(--bg1); }
+.contact-wrap {
+  display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start;
+}
+.contact-left h2 {
+  font-family:'Syne','DM Sans',sans-serif;
+  font-size:2.2rem; font-weight:800; letter-spacing:-.04em; line-height:1.1;
+  margin-bottom:14px;
+}
+.contact-left h2 span {
+  background:var(--grad-main); -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent; background-clip:text;
+}
+.contact-left p { font-size:.95rem; color:var(--t2); line-height:1.8; margin-bottom:32px; }
+.cinfo { display:flex; flex-direction:column; gap:10px; margin-bottom:28px; }
+.ci {
+  display:flex; align-items:center; gap:14px; padding:14px 18px;
+  border-radius:var(--r-sm); background:var(--surface); border:1px solid var(--border);
+  transition:border-color .2s, background .2s; cursor:default;
+}
+.ci[href]:hover { border-color:rgba(34,211,238,.3); background:rgba(34,211,238,.05); }
+.ci-icon { width:36px; height:36px; border-radius:8px; background:var(--bg2); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; color:var(--cyan); font-size:.9rem; flex-shrink:0; }
+.ci-lbl { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--t3); }
+.ci-val { font-size:.9rem; font-weight:500; }
+.social-row { display:flex; gap:10px; }
+.sbtn {
+  display:flex; align-items:center; gap:8px;
+  padding:10px 18px; border-radius:var(--r-sm);
+  border:1px solid var(--border); font-size:.83rem; font-weight:700; color:var(--t2);
+  transition:all .2s;
+}
+.sbtn:hover { border-color:var(--border2); color:var(--t1); background:var(--surface); transform:translateY(-2px); }
 
-							<form action="https://formsubmit.co/herrerae.hj@icloud.com" method="POST">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
+/* Form */
+.cf { display:flex; flex-direction:column; gap:14px; }
+.fg { display:flex; flex-direction:column; gap:5px; }
+.fg-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.fg label { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--t3); }
+.fg input, .fg textarea {
+  width:100%; padding:12px 16px; border-radius:var(--r-sm);
+  background:rgba(255,255,255,.03); border:1px solid var(--border);
+  color:var(--t1); font-family:'Inter',sans-serif; font-size:.9rem;
+  outline:none; transition:border-color .2s, box-shadow .2s;
+}
+.fg input:focus,.fg textarea:focus {
+  border-color:rgba(34,211,238,.4);
+  box-shadow:0 0 0 3px rgba(34,211,238,.08);
+}
+.fg input::placeholder,.fg textarea::placeholder { color:var(--t3); }
+.fg textarea { min-height:130px; resize:vertical; line-height:1.6; }
+.btn-send {
+  display:flex; align-items:center; justify-content:center; gap:8px;
+  padding:14px 28px; border-radius:var(--r-sm); border:none; cursor:pointer;
+  background:var(--grad-main); color:#06080f;
+  font-family:'Inter',sans-serif; font-size:.92rem; font-weight:800;
+  transition:opacity .2s, transform .2s, box-shadow .2s;
+}
+.btn-send:hover { opacity:.92; transform:translateY(-2px); box-shadow:0 12px 32px rgba(59,130,246,.35); }
 
-				
-								</div>
-							</form>
+/* ═══════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════ */
+footer {
+  border-top:1px solid var(--border); padding:28px 0;
+  text-align:center; background:var(--bg); position:relative; z-index:1;
+}
+footer p { font-size:.82rem; color:var(--t3); }
+footer a { color:var(--t2); transition:color .2s; }
+footer a:hover { color:var(--cyan); }
 
-						</div>
-					</section>
+/* ═══════════════════════════════════════════════════
+   SECTION HEADER
+═══════════════════════════════════════════════════ */
+.sh { text-align:center; margin-bottom:56px; }
+.sh-tag {
+  display:inline-block; padding:4px 14px; border-radius:100px;
+  font-size:.72rem; font-weight:800; text-transform:uppercase; letter-spacing:.08em;
+  color:var(--cyan); background:rgba(34,211,238,.08); border:1px solid rgba(34,211,238,.18);
+  margin-bottom:14px;
+}
+.sh h2 {
+  font-family:'Syne','DM Sans',sans-serif;
+  font-size:clamp(2rem,4vw,2.8rem); font-weight:800;
+  letter-spacing:-.04em; line-height:1.1; margin-bottom:10px;
+}
+.sh p { font-size:.95rem; color:var(--t2); max-width:520px; margin:0 auto; }
 
-			</div>
+/* ═══════════════════════════════════════════════════
+   SCROLL ANIMATIONS
+═══════════════════════════════════════════════════ */
+.anim { opacity:0; transform:translateY(24px); transition:opacity .65s var(--ease), transform .65s var(--ease); }
+.anim.in { opacity:1; transform:translateY(0); }
 
-		<!-- Footer -->
-		
-		<div id="footer">
-			
-			<!-- Copyright -->
-				<ul class="copyright">
-					<li>&copy; Hector Javier Herrera Espinola. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			
-		</div>
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════════════ */
+@media(max-width:1024px){
+  .hero-inner { grid-template-columns:1fr; text-align:center; gap:40px; }
+  .hero-visual { order:-1; }
+  .hero-sub,.hero-btns,.hero-stats { margin-left:auto; margin-right:auto; }
+  .hero-btns,.hero-stats { justify-content:center; }
+  .hero-eyebrow { margin:0 auto 24px; }
+  .b-main  { grid-column:span 12; }
+  .b-langs { grid-column:span 6; }
+  .b-certs { grid-column:span 6; }
+  .b-tools { grid-column:span 8; }
+  .b-loc   { grid-column:span 4; }
+  .exp-grid { grid-template-columns:1fr; }
+  .exp-card.featured { grid-column:span 1; }
+  .proj-grid { grid-template-columns:repeat(2,1fr); }
+  .contact-wrap { grid-template-columns:1fr; gap:48px; }
+  .fc1 { right:-12px; } .fc2 { left:-12px; }
+}
+@media(max-width:768px){
+  .nav-links { display:none; }
+  .burger { display:flex; }
+  .b-langs,.b-certs,.b-tools,.b-loc { grid-column:span 12; }
+  .proj-grid { grid-template-columns:1fr; }
+  .fg-row { grid-template-columns:1fr; }
+  section { padding:72px 0; }
+  .photo-frame { width:280px; height:360px; }
+  .fc { display:none; }
+}
+  </style>
+</head>
+<body>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">H<em>.</em>Herrera</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="nav-pill">Contact</a></li>
+    </ul>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <a href="#about"      class="mlink">About</a>
+  <a href="#experience" class="mlink">Experience</a>
+  <a href="#projects"   class="mlink">Projects</a>
+  <a href="#contact"    class="mlink">Contact</a>
+</div>
 
-	</body>
+<!-- ─── HERO ──────────────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="mesh">
+    <div class="mesh-orb orb1"></div>
+    <div class="mesh-orb orb2"></div>
+    <div class="mesh-orb orb3"></div>
+  </div>
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Left -->
+      <div class="hero-left">
+        <div class="hero-eyebrow anim"><span class="pulse"></span>Open to new opportunities</div>
+        <h1 class="hero-h1 anim">
+          Sr. Business<br/>
+          <span class="grad">Intelligence</span><br/>
+          Analyst
+        </h1>
+        <p class="hero-sub anim">
+          I turn messy data into <strong>clear decisions</strong>. 12+ years building BI infrastructure,
+          analytics pipelines, and dashboards across global companies — from LatAm to EMEA.
+        </p>
+        <div class="hero-btns anim">
+          <a href="#projects" class="btn-main"><i class="fas fa-chart-bar"></i>View Projects</a>
+          <a href="CV/Hector J Herrera.pdf" target="_blank" class="btn-ghost"><i class="fas fa-file-pdf"></i>Download CV</a>
+        </div>
+        <div class="hero-stats anim">
+          <div class="hstat"><span class="hstat-num">12+</span><span>Years Exp.</span></div>
+          <div class="hstat"><span class="hstat-num">6</span><span>BI Projects</span></div>
+          <div class="hstat"><span class="hstat-num">5</span><span>Companies</span></div>
+          <div class="hstat"><span class="hstat-num">4</span><span>Languages</span></div>
+        </div>
+      </div>
+
+      <!-- Right — Photo -->
+      <div class="hero-visual anim">
+        <div class="photo-frame">
+          <picture>
+            <source srcset="images/hjhe.avif" type="image/avif">
+            <source srcset="images/hjhe.webp" type="image/webp">
+            <img src="images/hjhe.jpg" alt="Hector Herrera Espinola">
+          </picture>
+        </div>
+        <div class="fc fc1"><span class="fc-icon">📊</span>Power BI &amp; Tableau</div>
+        <div class="fc fc2"><span class="fc-icon">🐍</span>Python &amp; SQL</div>
+        <div class="fc fc3"><span class="fc-icon">☁️</span>AWS Cloud</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── MARQUEE ────────────────────────────────────────────────────────── -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <!-- set 1 -->
+    <div class="marquee-item"><i class="fas fa-chart-bar"></i>Power BI</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-chart-pie"></i>Tableau</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-database"></i>SQL</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fab fa-python"></i>Python</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fab fa-aws"></i>AWS</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-bolt"></i>ETL Pipelines</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-code"></i>DAX</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-layer-group"></i>Data Modelling</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-brain"></i>Machine Learning</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-server"></i>FastAPI</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fab fa-docker"></i>Docker</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-table"></i>Pandas</div><div class="marquee-dot"></div>
+    <!-- set 2 (duplicate for seamless loop) -->
+    <div class="marquee-item"><i class="fas fa-chart-bar"></i>Power BI</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-chart-pie"></i>Tableau</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-database"></i>SQL</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fab fa-python"></i>Python</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fab fa-aws"></i>AWS</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-bolt"></i>ETL Pipelines</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-code"></i>DAX</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-layer-group"></i>Data Modelling</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-brain"></i>Machine Learning</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-server"></i>FastAPI</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fab fa-docker"></i>Docker</div><div class="marquee-dot"></div>
+    <div class="marquee-item"><i class="fas fa-table"></i>Pandas</div><div class="marquee-dot"></div>
+  </div>
+</div>
+
+<!-- ─── ABOUT — BENTO GRID ─────────────────────────────────────────────── -->
+<section id="about">
+  <div class="container">
+    <div class="sh anim">
+      <span class="sh-tag">About</span>
+      <h2>The analyst behind the data</h2>
+      <p>Industrial engineer turned BI specialist, connecting business context with data infrastructure</p>
+    </div>
+    <div class="bento">
+
+      <!-- Bio -->
+      <div class="card b-main anim">
+        <h2>Hector Herrera Espinola</h2>
+        <p>
+          Industrial Engineer with a Data Science certification and <strong>12+ years of cross-industry experience</strong>
+          in procurement, analytics, and BI engineering. Originally from Argentina, currently based in Cork, Ireland.
+        </p>
+        <p>
+          I've worked across LatAm and EMEA — leading data teams at <strong>Mercado Libre</strong>, deploying BI solutions at
+          <strong>Outer Rim</strong>, and managing strategic sourcing at IBM, PETRONAS, and AES Corporation.
+          My edge is the combination of business domain knowledge and technical depth.
+        </p>
+        <div class="about-tags">
+          <span class="atag">Power BI Developer</span>
+          <span class="atag">Data Analytics</span>
+          <span class="atag">ETL Engineering</span>
+          <span class="atag">Procurement Intelligence</span>
+          <span class="atag">SQL Expert</span>
+          <span class="atag">Python</span>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="card b-langs anim">
+        <h3>Languages</h3>
+        <div class="lang-row">
+          <span class="lang-name">Spanish</span>
+          <div class="lang-dots">
+            <div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div>
+          </div>
+          <span class="lang-lv">Native</span>
+        </div>
+        <div class="lang-row">
+          <span class="lang-name">English</span>
+          <div class="lang-dots">
+            <div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div>
+          </div>
+          <span class="lang-lv">C2</span>
+        </div>
+        <div class="lang-row">
+          <span class="lang-name">Portuguese</span>
+          <div class="lang-dots">
+            <div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld"></div><div class="ld"></div>
+          </div>
+          <span class="lang-lv">B2</span>
+        </div>
+        <div class="lang-row">
+          <span class="lang-name">Japanese</span>
+          <div class="lang-dots">
+            <div class="ld on"></div><div class="ld"></div><div class="ld"></div><div class="ld"></div><div class="ld"></div>
+          </div>
+          <span class="lang-lv">A1</span>
+        </div>
+      </div>
+
+      <!-- Location -->
+      <div class="card b-loc anim">
+        <h3>Location</h3>
+        <div class="loc-flag">🇮🇪</div>
+        <div class="loc-name">Cork</div>
+        <div class="loc-country">Ireland</div>
+        <div class="loc-avail"><span class="dot"></span>Open to Work</div>
+      </div>
+
+      <!-- Tools -->
+      <div class="card b-tools anim">
+        <h3>Tools &amp; Stack</h3>
+        <div class="tools-grid">
+          <span class="tool-badge tb-cyan">Power BI</span>
+          <span class="tool-badge tb-blue">Tableau</span>
+          <span class="tool-badge tb-purple">Python</span>
+          <span class="tool-badge tb-green">SQL</span>
+          <span class="tool-badge tb-amber">AWS S3/RDS/EC2</span>
+          <span class="tool-badge tb-pink">FastAPI</span>
+          <span class="tool-badge tb-cyan">DAX</span>
+          <span class="tool-badge tb-blue">Pandas / NumPy</span>
+          <span class="tool-badge tb-purple">Scikit-learn</span>
+          <span class="tool-badge tb-green">Docker</span>
+          <span class="tool-badge tb-amber">Streamlit</span>
+          <span class="tool-badge tb-pink">SAP Ariba</span>
+          <span class="tool-badge tb-cyan">Matplotlib</span>
+          <span class="tool-badge tb-blue">NoSQL</span>
+          <span class="tool-badge tb-purple">Git</span>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="card b-certs anim">
+        <h3>Certifications</h3>
+        <a href="https://github.com/hectorherreraespinola/hectorherreraespinola_portfolio.github.io/blob/main/images/4b7a980ac02c4e88ddaa9327e64a96c54132368e65066d5ef91dc6e84556e736.pdf" target="_blank" class="cert-item">
+          <i class="fas fa-certificate"></i>Data Scientist
+        </a>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/5GYRD7XL6BGD" target="_blank" class="cert-item">
+          <i class="fas fa-certificate"></i>Python Specialization
+        </a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/78Z4Y2BJ5EW7" target="_blank" class="cert-item">
+          <i class="fas fa-certificate"></i>Supervised ML — Coursera
+        </a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/37ZY5G5B2QMJ" target="_blank" class="cert-item">
+          <i class="fas fa-certificate"></i>Linear Algebra for ML
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPERIENCE ─────────────────────────────────────────────────────── -->
+<section id="experience">
+  <div class="container">
+    <div class="sh anim">
+      <span class="sh-tag">Career</span>
+      <h2>Work Experience</h2>
+      <p>12+ years delivering data-driven value across global organisations</p>
+    </div>
+    <div class="exp-grid">
+
+      <div class="exp-card featured anim">
+        <div class="exp-header">
+          <div>
+            <div class="exp-co">Outer Rim</div>
+            <div class="exp-role">Data Analyst · BI Developer</div>
+          </div>
+          <span class="exp-date">Oct 2022 — Present</span>
+        </div>
+        <ul class="exp-list">
+          <li>Built ETL pipelines connecting raw customer data sources to structured databases for BI reporting.</li>
+          <li>Developed and maintained robust Power BI dashboards used by business stakeholders for weekly decision-making.</li>
+          <li>Used Python to automate data transformation workflows and enforce data quality standards.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="etag">Power BI</span><span class="etag">Python</span><span class="etag">ETL</span><span class="etag">SQL</span>
+        </div>
+      </div>
+
+      <div class="exp-card anim">
+        <div class="exp-header">
+          <div>
+            <div class="exp-co">Mercado Libre</div>
+            <div class="exp-role">Sr. Procurement Data Analyst</div>
+          </div>
+          <span class="exp-date">Dec 2019 — Dec 2021</span>
+        </div>
+        <ul class="exp-list">
+          <li>Managed spend analytics and reporting for the entire LatAm region using Python, SQL, and Excel.</li>
+          <li>Created executive dashboards to communicate procurement insights across departments.</li>
+          <li>Spearheaded SAP Ariba Catalog rollout across the region — a paradigm shift in purchasing compliance.</li>
+        </ul>
+        <div class="exp-badge"><i class="fas fa-dollar-sign"></i>7-figure annual savings secured</div>
+        <div class="exp-tags">
+          <span class="etag">SQL</span><span class="etag">Python</span><span class="etag">Dashboards</span><span class="etag">SAP Ariba</span>
+        </div>
+      </div>
+
+      <div class="exp-card anim">
+        <div class="exp-header">
+          <div>
+            <div class="exp-co">IBM Argentina</div>
+            <div class="exp-role">Regional IT Buyer</div>
+          </div>
+          <span class="exp-date">2012 — 2015</span>
+        </div>
+        <ul class="exp-list">
+          <li>Managed IT procurement (software &amp; hardware) across Spanish-speaking LatAm.</li>
+          <li>Recognised as <strong>IBMer of Q4 2013</strong> by general management.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="etag">Procurement</span><span class="etag">LatAm</span><span class="etag">IT Category</span>
+        </div>
+      </div>
+
+      <div class="exp-card anim">
+        <div class="exp-header">
+          <div>
+            <div class="exp-co">PETRONAS · AES Corp</div>
+            <div class="exp-role">Procurement Executive &amp; Sr. Buyer</div>
+          </div>
+          <span class="exp-date">2015 — 2019</span>
+        </div>
+        <ul class="exp-list">
+          <li>Promoted to Procurement Executive at PETRONAS, leading a 3-person team and professionalising the department.</li>
+          <li>At AES Corp: led the Americas migration of all purchasing processes to a Buenos Aires shared services centre.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="etag">Leadership</span><span class="etag">Strategy</span><span class="etag">Americas</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROJECTS ───────────────────────────────────────────────────────── -->
+<section id="projects">
+  <div class="container">
+    <div class="sh anim">
+      <span class="sh-tag">Portfolio</span>
+      <h2>Featured Projects</h2>
+      <p>Real-world BI, analytics, and data engineering work</p>
+    </div>
+    <div class="proj-grid">
+
+      <div class="proj-card anim">
+        <div class="proj-img">
+          <picture><source srcset="images/telco.avif" type="image/avif"><source srcset="images/telco.webp" type="image/webp"><img src="images/telco.jpg" alt="Internet Analysis" loading="lazy"></picture>
+          <div class="proj-img-over"></div>
+          <span class="proj-type-badge ptb-bi">BI Dashboard</span>
+        </div>
+        <div class="proj-body">
+          <h3>Argentina Internet Analytics</h3>
+          <p>Python ETL pipeline + Power BI dashboard tracking internet penetration KPIs across all Argentine provinces.</p>
+          <div class="proj-stack"><span>Python</span><span>Power BI</span><span>ETL</span><span>EDA</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/hectorherreraespinola/Data-Analysis/blob/main/Dashboard/Internet%20Access%20Argentina.pdf" target="_blank" class="plink plink-main"><i class="fas fa-chart-bar"></i>Dashboard</a>
+            <a href="https://github.com/hectorherreraespinola/Data-Analysis" target="_blank" class="plink"><i class="fab fa-github"></i>Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card anim">
+        <div class="proj-img">
+          <picture><source srcset="images/covid19.avif" type="image/avif"><source srcset="images/covid19.webp" type="image/webp"><img src="images/covid19.jpg" alt="Covid19" loading="lazy"></picture>
+          <div class="proj-img-over"></div>
+          <span class="proj-type-badge ptb-bi">BI Dashboard</span>
+        </div>
+        <div class="proj-body">
+          <h3>Covid-19 Analytics</h3>
+          <p>SQL data exploration + Tableau interactive dashboard covering global case trends, mortality rates, and vaccination rollouts.</p>
+          <div class="proj-stack"><span>SQL</span><span>Tableau</span><span>Data Exploration</span></div>
+          <div class="proj-links">
+            <a href="https://public.tableau.com/app/profile/hector.herrera.espinola8204/viz/CovidDasboard_16776903984070/Dashboard1?publish=yes" target="_blank" class="plink plink-main"><i class="fas fa-chart-bar"></i>Dashboard</a>
+            <a href="https://github.com/hectorherreraespinola/Covid19_SQL_Data_Explorationd_and_Visualization" target="_blank" class="plink"><i class="fab fa-github"></i>Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card anim">
+        <div class="proj-img">
+          <picture><source srcset="images/Workflow.avif" type="image/avif"><source srcset="images/Workflow.webp" type="image/webp"><img src="images/Workflow.jpg" alt="Messi" loading="lazy"></picture>
+          <div class="proj-img-over"></div>
+          <span class="proj-type-badge ptb-da">Data Analytics</span>
+        </div>
+        <div class="proj-body">
+          <h3>Messi Career Analytics</h3>
+          <p>Web scraping → Python cleaning → AWS RDS → live Streamlit app with full career statistical analysis and visualisations.</p>
+          <div class="proj-stack"><span>Python</span><span>Streamlit</span><span>AWS RDS</span><span>Matplotlib</span></div>
+          <div class="proj-links">
+            <a href="https://hectorherreraespinola-messi-10-introduction.streamlit.app/" target="_blank" class="plink plink-main"><i class="fas fa-external-link-alt"></i>Live App</a>
+            <a href="https://github.com/hectorherreraespinola/Messi_10" target="_blank" class="plink"><i class="fab fa-github"></i>Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card anim">
+        <div class="proj-img">
+          <picture><source srcset="images/imagen.avif" type="image/avif"><source srcset="images/imagen.webp" type="image/webp"><img src="images/imagen.jpg" alt="Streaming" loading="lazy"></picture>
+          <div class="proj-img-over"></div>
+          <span class="proj-type-badge ptb-de">Data Engineering</span>
+        </div>
+        <div class="proj-body">
+          <h3>Streaming Platforms API</h3>
+          <p>Ingestion pipeline for streaming data with transformations served via FastAPI on AWS EC2 inside a Docker container.</p>
+          <div class="proj-stack"><span>FastAPI</span><span>AWS EC2</span><span>Docker</span><span>Python</span></div>
+          <div class="proj-links">
+            <a href="https://www.youtube.com/watch?v=eziXYxe-t5g" target="_blank" class="plink plink-main"><i class="fab fa-youtube"></i>Demo</a>
+            <a href="https://github.com/hectorherreraespinola/Data_Engineering_API" target="_blank" class="plink"><i class="fab fa-github"></i>Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card anim">
+        <div class="proj-img">
+          <picture>
+            <source srcset="images/camilla-vacía-de-la-cama-en-pasillo-del-hospital-90855015.avif" type="image/avif">
+            <source srcset="images/camilla-vacía-de-la-cama-en-pasillo-del-hospital-90855015.webp" type="image/webp">
+            <img src="images/camilla-vacía-de-la-cama-en-pasillo-del-hospital-90855015.jpg" alt="Hospital" loading="lazy">
+          </picture>
+          <div class="proj-img-over"></div>
+          <span class="proj-type-badge ptb-ml">Machine Learning</span>
+        </div>
+        <div class="proj-body">
+          <h3>Hospital Stay Prediction</h3>
+          <p>ML model predicting whether patients will stay 8+ days — enabling proactive resource planning for healthcare teams.</p>
+          <div class="proj-stack"><span>Python</span><span>Scikit-learn</span><span>ML</span><span>Pandas</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/hectorherreraespinola/Machine-Learning_Hospitalizations" target="_blank" class="plink plink-main"><i class="fab fa-github"></i>View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card anim">
+        <div class="proj-img">
+          <img src="https://camo.githubusercontent.com/4cea453d11c37745f7e0b3ea3771d09ffc74315e340194b3fc4cf919e9dc1314/68747470733a2f2f7777772e6d696c7761756b65656d61672e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032312f30312f4765747479496d616765732d313232333635383532322d31303234783632382e6a7067" alt="UFO" loading="lazy">
+          <div class="proj-img-over"></div>
+          <span class="proj-type-badge ptb-da">Data Analytics</span>
+        </div>
+        <div class="proj-body">
+          <h3>UFO Sightings EDA</h3>
+          <p>Exploratory analysis of global UFO reports uncovering temporal patterns, geographic clusters, and reporting behaviour trends.</p>
+          <div class="proj-stack"><span>Python</span><span>Pandas</span><span>EDA</span><span>Matplotlib</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/hectorherreraespinola/UFO_sightings/blob/main/ufo_sightings.ipynb" target="_blank" class="plink plink-main"><i class="fab fa-github"></i>Notebook</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ────────────────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="container">
+    <div class="sh anim">
+      <span class="sh-tag">Contact</span>
+      <h2>Let's work together</h2>
+      <p>Open to BI analyst, analytics engineer, and data analyst roles</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="anim">
+        <h2>Have a project<br/>or <span>opportunity?</span></h2>
+        <p>Whether you need a BI specialist to build your analytics stack or a data analyst to drive smarter decisions — I'd love to connect.</p>
+        <div class="cinfo">
+          <div class="ci">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><div class="ci-lbl">Location</div><div class="ci-val">Cork, Ireland</div></div>
+          </div>
+          <a href="mailto:herrerae.hj@icloud.com" class="ci">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div><div class="ci-lbl">Email</div><div class="ci-val">herrerae.hj@icloud.com</div></div>
+          </a>
+          <a href="tel:+353871864406" class="ci">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div><div class="ci-lbl">Phone</div><div class="ci-val">+353 87 186 4406</div></div>
+          </a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/hectorherreraespinola" target="_blank" class="sbtn"><i class="fab fa-github"></i>GitHub</a>
+          <a href="https://www.linkedin.com/in/herrerraespinolahj/" target="_blank" class="sbtn"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+          <a href="https://twitter.com/hekutahabieru" target="_blank" class="sbtn"><i class="fab fa-twitter"></i>Twitter</a>
+        </div>
+      </div>
+
+      <form class="cf anim" action="https://formsubmit.co/herrerae.hj@icloud.com" method="POST">
+        <div class="fg-row">
+          <div class="fg">
+            <label for="fn">Name</label>
+            <input type="text" id="fn" name="name" placeholder="John Smith" required />
+          </div>
+          <div class="fg">
+            <label for="fe">Email</label>
+            <input type="email" id="fe" name="email" placeholder="john@company.com" required />
+          </div>
+        </div>
+        <div class="fg">
+          <label for="fs">Subject</label>
+          <input type="text" id="fs" name="subject" placeholder="Job opportunity / Project" />
+        </div>
+        <div class="fg">
+          <label for="fm">Message</label>
+          <textarea id="fm" name="message" placeholder="Tell me about the role or project…" required></textarea>
+        </div>
+        <button type="submit" class="btn-send"><i class="fas fa-paper-plane"></i>Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>© 2025 Hector Javier Herrera Espinola &nbsp;·&nbsp;
+      <a href="https://github.com/hectorherreraespinola" target="_blank">GitHub</a> &nbsp;·&nbsp;
+      <a href="https://www.linkedin.com/in/herrerraespinolahj/" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+// Nav solid on scroll
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('solid', scrollY > 40), {passive:true});
+
+// Mobile menu
+const burger = document.getElementById('burger');
+const mob = document.getElementById('mobNav');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  mob.classList.toggle('open');
+  document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
+});
+document.querySelectorAll('.mlink').forEach(l => l.addEventListener('click', () => {
+  burger.classList.remove('open'); mob.classList.remove('open'); document.body.style.overflow = '';
+}));
+
+// Scroll animations
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('in'), i * 70);
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.anim').forEach(el => io.observe(el));
+</script>
+</body>
 </html>
